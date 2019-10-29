@@ -1,0 +1,9 @@
+{
+  "dbInfo": {
+    "host": "localhost",
+    "user": "test",
+    "password": "test",
+    "database": "petespeth",
+    "table": "Projects"
+  }
+}

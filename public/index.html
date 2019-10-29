@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>pete</title>
+  <title>Peter Spethmann</title>
 
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Jaldi&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
@@ -54,8 +54,17 @@
   </div>
   <hr />
   <div class="page" id="bottomPage">
-    <p><em>Cool stuff coming soon...</em></p>
+    <div class="tabs">
+      <button class="tabHeader active" onclick="getProjects()">Projects</button>
+      <button class="tabHeader" onclick="getPosts()">Posts</button>
+    </div>
+    <div id="tabContent">
+      <div style="height:20px"></div>
+    </div>
   </div>
+  </div>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
