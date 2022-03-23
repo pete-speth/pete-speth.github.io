@@ -9,6 +9,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Jaldi&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
@@ -16,17 +17,17 @@
     <div class="links">
       <div class="linkContainer">
         <a href="https://github.com/pete-speth">
-          <img src="images/GitHub-Mark-120px-plus.png" alt="GitHub logo">
+          <img src="/images/GitHub-Mark-120px-plus.png" alt="GitHub logo">
         </a>
       </div>
       <div class="linkContainer">
         <a href="https://www.linkedin.com/in/peter-spethmann/">
-          <img src="images/In-Blue-128.png" alt="LinkedIn Logo">
+          <img src="/images/In-Blue-128.png" alt="LinkedIn Logo">
         </a>
       </div>
       <div class="linkContainer">
         <a href="https://twitter.com/pete_speth">
-          <img src="images/Twitter_Social_Icon_Circle_Color.png" alt="Twitter Logo">
+          <img src="/images/Twitter_Social_Icon_Circle_Color.png" alt="Twitter Logo">
         </a>
       </div>
     </div>
@@ -52,19 +53,18 @@
       </svg>
     </div>
   </div>
-  <hr />
+  <!-- <hr /> -->
   <div class="page" id="bottomPage">
-    <div class="tabs">
-      <button class="tabHeader active" onclick="getProjects()">Projects</button>
-      <button class="tabHeader" onclick="getPosts()">Posts</button>
-    </div>
-    <div id="tabContent">
-      <div style="height:20px"></div>
+    <div id="projects">
+      {{ range where .Site.RegularPages "Type" "projects" }}
+        <a href="{{ .RelPermalink }}" class="projectCard">
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Summary }}</p>
+        </a>
+      {{ end }}
     </div>
   </div>
   </div>
-
-  <script src="js/index.js"></script>
 </body>
 
 </html>
