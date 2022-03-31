@@ -1,0 +1,22 @@
+#header {
+  padding: 0 5%;
+}
+
+#wrapper {
+  padding: 0 5%;
+  font-family: "PT Sans", sans-serif;
+}
+
+#main {
+  padding-top: 20px;
+}
+
+#main #title {
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+  #wrapper {
+    padding: 0 20%;
+  }
+}

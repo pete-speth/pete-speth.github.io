@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<meta name="generator" content="Hugo 0.92.1" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -47,15 +48,10 @@
       </svg>
     </div>
   </div>
-  <!-- <hr /> -->
+  
   <div class="page" id="bottomPage">
     <div id="projects">
-      {{ range where .Site.RegularPages "Type" "projects" }}
-        <a href="{{ .RelPermalink }}" class="projectCard">
-            <h2>{{ .Title }}</h2>
-            <p>{{ .Summary }}</p>
-        </a>
-      {{ end }}
+      
     </div>
   </div>
   </div>
