@@ -36,7 +36,6 @@ hr {
 #topPage p {
   margin: 0 5%;
   font-size: 28px;
-  font-family: "Jaldi", sans-serif;
 }
 
 .stickmanContainer {
@@ -46,10 +45,11 @@ hr {
 }
 
 #bottomPage {
-  background-color: #ebebeb;
+  background-color: #d1cdcd;
 }
 
 #projects {
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -63,8 +63,10 @@ hr {
   text-align: left;
   color: black;
   text-decoration: none;
-  border: 1px solid gray;
-  border-radius: 3px;
+  border: 1px solid rgb(94, 94, 94);
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
   background-color: #ffffff;
 }
 
@@ -98,5 +100,13 @@ hr {
 
   .linkContainer img {
     --size: 75px;
+  }
+
+  #projects {
+    justify-content: space-around;
+  }
+
+  #projects .projectCard {
+    width: 250px;
   }
 }
